@@ -1,11 +1,23 @@
+import { GoBell } from "react-icons/go";
 import "./index.css";
 import Button from "./Button";
 
 function App() {
+  const handleClick = () => {
+    console.log("click");
+  };
+
   return (
     <div>
       <div>
-        <Button success rounded outline>
+        <Button
+          secondary
+          rounded
+          outline
+          className="mb-5"
+          onClick={handleClick}
+        >
+          <GoBell />
           Click
         </Button>
       </div>
@@ -15,7 +27,10 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button warning>Click him</Button>
+        <Button warning>
+          <GoBell />
+          Click him
+        </Button>
       </div>
       <div>
         <Button secondary outline>
@@ -23,7 +38,7 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button secondary rounded>
+        <Button primary rounded>
           Click this
         </Button>
       </div>
