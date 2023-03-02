@@ -1,49 +1,30 @@
-import { GoBell } from "react-icons/go";
-import "./index.css";
-import Button from "./Button";
+import Accordion from "./components/Accordion";
 
 function App() {
-  const handleClick = () => {
-    console.log("click");
-  };
+  const items = [
+    {
+      id: "fafadfadg",
+      label: "lorem ipsum",
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    },
+    {
+      id: "asashsafh",
 
-  return (
-    <div>
-      <div>
-        <Button
-          secondary
-          rounded
-          outline
-          className="mb-5"
-          onClick={handleClick}
-        >
-          <GoBell />
-          Click
-        </Button>
-      </div>
-      <div>
-        <Button danger outline>
-          Click me
-        </Button>
-      </div>
-      <div>
-        <Button warning>
-          <GoBell />
-          Click him
-        </Button>
-      </div>
-      <div>
-        <Button secondary outline>
-          Click her
-        </Button>
-      </div>
-      <div>
-        <Button primary rounded>
-          Click this
-        </Button>
-      </div>
-    </div>
-  );
+      label: "lorem ipsum",
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    },
+    {
+      id: "ashashasw",
+
+      label: "lorem ipsum",
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    },
+  ];
+
+  return <Accordion items={items} />;
 }
 
 export default App;

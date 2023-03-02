@@ -22,7 +22,7 @@ function Button({
       "border-green-500 bg-green-500 text-white": success,
       "border-yellow-500 bg-yellow-500 text-white": warning,
       "border-red-500 bg-red-500 text-white": danger,
-      // "bg-white ": outline,
+      // "bg-white ": outline,kinsa
       "rounded-full": rounded,
       "text-blue-500": outline && primary,
       "text-gray-500": outline && secondary,
