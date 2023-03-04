@@ -1,6 +1,7 @@
 // import styles from "../public/index.html";
-import "./index.css";
-import Accordion from "./components/Accordion";
+// import "./index.css";
+// import Accordion from "./components/Accordion";
+import Accordion from "../components/Accordion";
 
 function AccordionPage() {
   const items = [

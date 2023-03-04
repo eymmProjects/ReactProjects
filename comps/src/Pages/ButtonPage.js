@@ -1,5 +1,5 @@
 import { GoBell } from "react-icons/go";
-import "./index.css";
+// import "./index.css";
 import Button from "../components/Button";
 
 function ButtonPage() {
