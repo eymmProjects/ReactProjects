@@ -1,7 +1,13 @@
+import { Fragment } from "react";
+
 function Table({ data, config, keyFn }) {
   // return <div>{data.length}</div>;
 
   const renderedHeader = config.map((column) => {
+    if (column.header) {
+      return <Fragment key={column.label}>{column.header()}</Fragment>;
+    }
+
     return (
       <th
         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
