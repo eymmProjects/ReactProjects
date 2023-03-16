@@ -17,6 +17,12 @@
       "id": 9
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Lorem 1",
+      "userId": 5
+    }
+  ],
   "photos": []
 }
