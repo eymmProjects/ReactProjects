@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "Ms. Lillie Romaguera",
-      "id": 5
-    },
-    {
       "name": "Luther Simonis",
       "id": 6
     },
@@ -15,13 +11,47 @@
     {
       "name": "Byron Lowe",
       "id": 9
+    },
+    {
+      "name": "Ann Quigley",
+      "id": 10
     }
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Lorem 1",
-      "userId": 5
+      "userId": 6,
+      "title": "Licensed Cotton Chips",
+      "id": 11
+    },
+    {
+      "userId": 6,
+      "title": "Incredible Rubber Hat",
+      "id": 12
+    },
+    {
+      "userId": 6,
+      "title": "Handmade Wooden Salad",
+      "id": 13
+    },
+    {
+      "userId": 6,
+      "title": "Practical Steel Computer",
+      "id": 16
+    },
+    {
+      "userId": 7,
+      "title": "Bespoke Concrete Pants",
+      "id": 17
+    },
+    {
+      "userId": 6,
+      "title": "Small Fresh Gloves",
+      "id": 20
+    },
+    {
+      "userId": 6,
+      "title": "Intelligent Cotton Bacon",
+      "id": 21
     }
   ],
   "photos": []
