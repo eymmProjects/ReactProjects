@@ -16,11 +16,6 @@
   "albums": [
     {
       "userId": 7,
-      "title": "Bespoke Concrete Pants",
-      "id": 17
-    },
-    {
-      "userId": 7,
       "title": "Handcrafted Frozen Gloves",
       "id": 18
     },
@@ -45,5 +40,21 @@
       "id": 22
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5798",
+      "id": 1
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=19287",
+      "id": 2
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=69675",
+      "id": 3
+    }
+  ]
 }
