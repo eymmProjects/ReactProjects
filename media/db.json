@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "Luther Simonis",
-      "id": 6
-    },
-    {
       "name": "Lena Dibbert",
       "id": 7
     },
@@ -19,39 +15,34 @@
   ],
   "albums": [
     {
-      "userId": 6,
-      "title": "Licensed Cotton Chips",
-      "id": 11
-    },
-    {
-      "userId": 6,
-      "title": "Incredible Rubber Hat",
-      "id": 12
-    },
-    {
-      "userId": 6,
-      "title": "Handmade Wooden Salad",
-      "id": 13
-    },
-    {
-      "userId": 6,
-      "title": "Practical Steel Computer",
-      "id": 16
-    },
-    {
       "userId": 7,
       "title": "Bespoke Concrete Pants",
       "id": 17
     },
     {
-      "userId": 6,
-      "title": "Small Fresh Gloves",
+      "userId": 7,
+      "title": "Handcrafted Frozen Gloves",
+      "id": 18
+    },
+    {
+      "userId": 7,
+      "title": "Bespoke Cotton Chair",
+      "id": 19
+    },
+    {
+      "userId": 7,
+      "title": "Electronic Fresh Bacon",
       "id": 20
     },
     {
-      "userId": 6,
-      "title": "Intelligent Cotton Bacon",
+      "userId": 7,
+      "title": "Handcrafted Bronze Pizza",
       "id": 21
+    },
+    {
+      "userId": 7,
+      "title": "Handmade Granite Soap",
+      "id": 22
     }
   ],
   "photos": []
