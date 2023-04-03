@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const connect = mongoose.connect(
+mongoose.connect(
   "mongodb+srv://dbApp1:rootroot@cluster0.yzitzp1.mongodb.net/ExpenseApp",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );

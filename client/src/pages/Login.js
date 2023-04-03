@@ -1,11 +1,20 @@
-import { Button, Checkbox, Form, Input } from "antd";
+import { Form, Input, message } from "antd";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../resources/authentication.css";
+import axios from "axios";
 
 function Login() {
-  const onFinish = (values) => {
-    console.log(values);
+  const navigate = useNavigate();
+  const onFinish = async (values) => {
+    try {
+      const response = await axios.post("/api/login", values);
+      localStorage.setItem("ExpenseApp", JSON.stringify(response));
+      message.success("Login Successful");
+      navigate("/");
+    } catch (error) {
+      message.error("login failed");
+    }
   };
 
   return (

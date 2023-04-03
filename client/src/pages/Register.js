@@ -1,11 +1,17 @@
-import { Button, Checkbox, Form, Input } from "antd";
+import { Form, Input, message } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import "../resources/authentication.css";
+import axios from "axios";
 
 function Register() {
-  const onFinish = (values) => {
-    console.log(values);
+  const onFinish = async (values) => {
+    try {
+      await axios.post("/api/users/register", values);
+      message.success("Registration successful");
+    } catch (error) {
+      message.error("Some went wrong");
+    }
   };
 
   return (
