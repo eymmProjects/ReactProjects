@@ -20,4 +20,8 @@ function App() {
   );
 }
 
+function ProtectedRoute(props){
+  if(localStorage.getItem(''));
+}
+
 export default App;
