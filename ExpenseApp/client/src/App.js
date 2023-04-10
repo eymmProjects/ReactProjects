@@ -20,8 +20,10 @@ function App() {
   );
 }
 
-function ProtectedRoute(props){
-  if(localStorage.getItem(''));
-}
+// ExpenseApp1
+
+// function ProtectedRoute(props){
+//   if(localStorage.getItem(''));
+// }
 
 export default App;

@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 const userRoute = require("./routes/usersRoute");
 
-app.use("/api/users", userRoute);
+app.use("/api/users/", userRoute);
 
 const port = 5000;
 

@@ -7,7 +7,7 @@ router.post("/login", async function (req, res) {
   try {
     const result = User.findOne({
       email: req.body.email,
-      password: req.bodey.password,
+      password: req.body.password,
     });
 
     if (result) {
