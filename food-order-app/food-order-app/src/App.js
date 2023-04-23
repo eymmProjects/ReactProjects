@@ -3,8 +3,10 @@ import Navbar from "./components/Navbar";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/Home";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
 import Menu from "./pages/Menu";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/menu" exact component={Menu} />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
       </Router>
