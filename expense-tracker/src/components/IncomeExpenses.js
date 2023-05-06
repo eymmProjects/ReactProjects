@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
+//Money formatter function
 function moneyFormatter(num) {
   let p = num.toFixed(2).split(".");
   return (
-    " P " +
+    "  ₹ " +
     p[0]
       .split("")
       .reverse()
@@ -16,8 +17,9 @@ function moneyFormatter(num) {
   );
 }
 
-export const IncomeExpense = () => {
+export const IncomeExpenses = () => {
   const { transactions } = useContext(GlobalContext);
+
   const amounts = transactions.map((transaction) => transaction.amount);
 
   const income = amounts
@@ -29,12 +31,12 @@ export const IncomeExpense = () => {
     -1;
 
   return (
-    <div className="inc-exp container">
-      <div className="">
+    <div className="inc-exp-container">
+      <div>
         <h4>Income</h4>
         <p className="money plus">{moneyFormatter(income)}</p>
       </div>
-      <div className="">
+      <div>
         <h4>Expense</h4>
         <p className="money minus">{moneyFormatter(expense)}</p>
       </div>
